@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <h1 class="heading"> Sudoku Solver</h1>
+        <br><br><br>
+        <div id="Sudoku_container">
+            <div class="ls ts" id="0"></div>
+            <div class="ld ts" id="1"></div>
+            <div class="ld ts" id="2"></div>
+            <div class="ls ts" id="3"></div>
+            <div class="ld ts" id="4"></div>
+            <div class="ld ts" id="5"></div>
+            <div class="ls ts" id="6"></div>
+            <div class="ld ts" id="7"></div>
+            <div class="ld ts rs" id="8"></div>
+
+            <div class="ls td" id="9"></div>
+            <div class="ld td" id="10"></div>
+            <div class="ld td" id="11"></div>
+            <div class="ls td" id="12"></div>
+            <div class="ld td" id="13"></div>
+            <div class="ld td" id="14"></div>
+            <div class="ls td" id="15"></div>
+            <div class="ld td" id="16"></div>
+            <div class="ld td rs" id="17"></div>
+
+            <div class="ls td" id="18"></div>
+            <div class="ld td" id="19"></div>
+            <div class="ld td" id="20"></div>
+            <div class="ls td" id="21"></div>
+            <div class="ld td" id="22"></div>
+            <div class="ld td" id="23"></div>
+            <div class="ls td" id="24"></div>
+            <div class="ld td" id="25"></div>
+            <div class="ld td rs" id="26"></div>
+
+            <div class="ls ts" id="27"></div>
+            <div class="ld ts" id="28"></div>
+            <div class="ld ts" id="29"></div>
+            <div class="ls ts" id="30"></div>
+            <div class="ld ts" id="31"></div>
+            <div class="ld ts" id="32"></div>
+            <div class="ls ts" id="33"></div>
+            <div class="ld ts" id="34"></div>
+            <div class="ld ts rs" id="35"></div>
+
+            <div class="ls td" id="36"></div>
+            <div class="ld td" id="37"></div>
+            <div class="ld td" id="38"></div>
+            <div class="ls td" id="39"></div>
+            <div class="ld td" id="40"></div>
+            <div class="ld td" id="41"></div>
+            <div class="ls td" id="42"></div>
+            <div class="ld td" id="43"></div>
+            <div class="ld td rs" id="44"></div>
+
+            <div class="ls td" id="45"></div>
+            <div class="ld td" id="46"></div>
+            <div class="ld td" id="47"></div>
+            <div class="ls td" id="48"></div>
+            <div class="ld td" id="49"></div>
+            <div class="ld td" id="50"></div>
+            <div class="ls td" id="51"></div>
+            <div class="ld td" id="52"></div>
+            <div class="ld td rs" id="53"></div>
+
+            <div class="ls ts" id="54"></div>
+            <div class="ld ts" id="55"></div>
+            <div class="ld ts" id="56"></div>
+            <div class="ls ts" id="57"></div>
+            <div class="ld ts" id="58"></div>
+            <div class="ld ts" id="59"></div>
+            <div class="ls ts" id="60"></div>
+            <div class="ld ts" id="61"></div>
+            <div class="ld ts rs" id="62"></div>
+
+            <div class="ls td" id="63"></div>
+            <div class="ld td" id="64"></div>
+            <div class="ld td" id="65"></div>
+            <div class="ls td" id="66"></div>
+            <div class="ld td" id="67"></div>
+            <div class="ld td" id="68"></div>
+            <div class="ls td" id="69"></div>
+            <div class="ld td" id="70"></div>
+            <div class="ld td rs" id="71"></div>
+
+            <div class="ls td bs" id="72"></div>
+            <div class="ld td bs" id="73"></div>
+            <div class="ld td bs" id="74"></div>
+            <div class="ls td bs" id="75"></div>
+            <div class="ld td bs" id="76"></div>
+            <div class="ld td bs" id="77"></div>
+            <div class="ls td bs" id="78"></div>
+            <div class="ld td bs" id="79"></div>
+            <div class="ld td rs bs" id="80"></div>
+        </div>
+
+        <div id="bottom">
+            <div id="list">
+                <select name="difficulty_level" id="level">
+                    <option selected="true" disabled="true">Select</option>
+                    <option>easy</option>
+                    <option>medium</option>
+                    <option>hard</option>
+                    <option>random</option>
+                </select>
+            </div>            
+            <div id="buttons">
+                <button type="button" id="generate_sudoku">Get New Puzzle</button>
+                <button type="button" id="solve_sudoku">Solve Puzzle</button>
+            </div>
+        </div>
+    </body>
+</html>
